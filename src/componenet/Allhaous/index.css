@@ -1,0 +1,253 @@
+:root{
+  --main-color: rgb(6, 124, 40);
+  --blue-color: rgb(64, 98, 152);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caveat:wght@400;500;600;700&family=Lexend+Peta:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.locatoin,
+.type,
+.catigory{
+    padding: 5px 15px;
+}
+
+.locatoin a{
+    color: #333;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.locatoin a svg{
+    margin: 5px;
+    transform: translateY(3px);
+}
+
+.locatoin h5{
+    margin: 10px 0 0;
+    color: #555;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.locatoin h5 svg{
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+/* type for */
+
+.type p,
+.catigory p{
+font-weight: 500;
+letter-spacing: 1px;
+font-size: 20px;
+margin: 0;
+color: #333;
+}
+
+.catigory ul,
+.type ul{
+    display: flex;
+}
+
+ul>a,
+ul button,
+button{
+    margin: 0px 10px 0  0;
+    border-radius: 20px;
+border: 1px solid #555;
+    padding: 10px 15px;
+    color: #333; 
+    background-color: #efefef;
+    box-shadow: 5px 5px 10px #555 ;
+}
+
+
+
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+width: 100%;
+margin: 10px 0;
+}
+
+.filter,
+.map{
+ cursor: pointer;   
+ width: fit-content;
+  display: flex;
+    align-items: center;
+    color: var(--main-color);
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.filter svg,
+.map svg{
+    font-size: 35px;
+}
+
+.filter span,
+.map span{
+    color: var(--blue-color);
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: underline;
+    font-weight: 900;
+    font-family: 'Akaya Kanadaka', cursive;
+
+}
+
+.container{
+    width: 95%;
+    margin: 10px auto 20px;
+    overflow: hidden;
+    height: 100vh;
+   
+}
+.catigory ul,
+.type ul{
+    padding: 0;
+}
+
+.navigatoin{
+    border: 1px solid #555;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 10px 15px;
+    /* background-color: #eee; */
+    position: relative;
+    background-color: white;
+    z-index: 100000000;
+}
+
+.navigatoin .close{
+position: absolute;
+top: 20px;
+right: 20px;
+cursor: pointer;
+}
+.navigatoin .close svg{
+font-size: 40px;
+color: var(--blue-color);
+}
+
+/* } */
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+.flex{
+    flex-direction: row;
+}
+}
+
+.none{
+    display: none;
+}
+
+.resolt{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+
+.article{
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #eee;
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px #efefef ;
+position: relative;
+}
+
+.article::after{
+    content: attr(data-for);
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    padding: 5px 10px 5px 20px;
+    color: white;
+    background-color: var(--main-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+
+.article  img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.article h1,
+.article h2,
+.article h3{
+    margin: 0;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.article h1{
+font-family: 'Akaya Kanadaka', cursive;
+color: var(--blue-color);
+text-decoration: underline;
+}
+
+.article h2{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.article h3{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 16px;
+     color: black;
+}
+
+.article h3 span{
+    color: var(--blue-color);
+    font-family: 'Akaya Kanadaka', cursive;
+
+}
+.green{
+    background-color: green;
+    color: white;
+}
+
+.mapp{
+    width: 95%;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.mapp .leaflet-container{
+    width: 95%;
+    height: 100%;
+}
+
+.i{
+    border-radius: 50%;
+}
+

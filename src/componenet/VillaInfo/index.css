@@ -1,0 +1,94 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+:root{
+  --main-color: rgb(6, 124, 40);
+  --blue-color: rgb(64, 98, 152);
+}
+
+.villa .info{
+border-top: 1px solid #eee;
+border-radius: 20px;
+transform: translateY(-15px);
+background-color: white;
+}
+
+.villa .titel{
+    padding: 10px 10px;
+border-bottom: 1px solid #aaa;
+border-radius: 10px;
+}
+
+
+.villa .titel h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.villa .titel .titel-nav{
+    display: flex;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.villa .titel .titel-nav a{
+color: black;
+}
+
+.titel .offers{
+    color: #444;
+}
+
+.titel .offers svg{
+    margin: 0 10px ;
+}
+
+.titel.owner{
+    display: flex;
+align-items: center;
+padding: 5px 20px;
+justify-content: space-between;
+}
+
+.titel.owner ul,
+.titel.owner h4,
+.titel.owner h5{
+margin: 0;
+}
+
+.titel.owner img{
+width: 75px;
+height: 75px;
+border-radius: 50% ;
+margin-right: 50px;
+}
+
+.titel.owner .o-inf{
+   /* margin-right: 50px; */
+}
+
+
+
+.titel.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.leaflet-control-attribution{
+    display: none;
+}
+
+.leaflet-container{
+    height: 300px;
+    width: 300px;
+}
+
+
+
+
+.image-gallery-image{
+    height: 276px !important;
+    width: 100%;
+}
